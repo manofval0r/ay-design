@@ -2,7 +2,7 @@ document.addEventListener('DOMContentLoaded', () => {
     /*=============== TYPING EFFECT ===============*/
     if (document.querySelector('.typing-effect')) {
         new Typed('.typing-effect', {
-            strings: ['Graphic Designer', 'Content Creator', 'Social Media Manager', 'Graphics Design Teacher'],
+            strings: ['Graphic Designer', 'Content Creator', 'Social Media Manager', 'Graphics Design Mentor'],
             typeSpeed: 100,
             backSpeed: 60,
             loop: true
