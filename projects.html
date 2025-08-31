@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio | Solomon Binutu</title>
+
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+  </head>
+  <body>
+    <!-- ==================== HEADER & NAVIGATION ==================== -->
+    <header class="header">
+      <nav class="nav container">
+        <a href="index.html" class="nav-logo">Solomon B.</a>
+        <div class="nav-menu">
+          <ul class="nav-list">
+            <!-- Note: Links now point back to index.html sections -->
+            <li class="nav-item">
+              <a href="index.html#about" class="nav-link">About</a>
+            </li>
+            <li class="nav-item">
+              <a href="projects.html" class="nav-link active-nav-link"
+                >Portfolio</a
+              >
+            </li>
+            <li class="nav-item">
+              <a href="index.html#experience" class="nav-link">Experience</a>
+            </li>
+            <li class="nav-item">
+              <a href="index.html#certificates" class="nav-link"
+                >Certificates</a
+              >
+            </li>
+            <li class="nav-item">
+              <a href="index.html#contact" class="nav-link">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <!-- ==================== FULL PORTFOLIO ==================== -->
+      <section class="portfolio section" id="portfolio">
+        <h2 class="section-title">My Portfolio</h2>
+        <span class="section-subtitle">All Projects</span>
+
+        <div class="portfolio-controls container">
+          <div class="portfolio-filters">
+            <button
+              class="portfolio-filter-item active-filter"
+              data-filter="all"
+            >
+              All
+            </button>
+            <button class="portfolio-filter-item" data-filter="logo">
+              Logos
+            </button>
+            <button class="portfolio-filter-item" data-filter="flyer">
+              Flyers
+            </button>
+            <button class="portfolio-filter-item" data-filter="business-card">
+              Business Cards
+            </button>
+            <button class="portfolio-filter-item" data-filter="printing">
+              Printing
+            </button>
+          </div>
+          <div class="view-controls">
+            <button class="view-btn active-view" data-view="grid">
+              <i class="fas fa-th-large"></i>
+            </button>
+            <button class="view-btn" data-view="list">
+              <i class="fas fa-list"></i>
+            </button>
+          </div>
+        </div>
+
+        <div class="portfolio-container container grid-view">
+          <!-- Portfolio Item 1 -->
+          <div
+            class="portfolio-content grid"
+            data-item="flyer"
+            data-download-url="assets/projects/GDI.jpg"
+          >
+            <img
+              src="assets/projects/GDI.jpg"
+              alt="GDI Flyer Design"
+              class="portfolio-img"
+            />
+            <div class="portfolio-data">
+              <h3 class="portfolio-title">Logo Design</h3>
+              <span class="portfolio-subtitle">Mockup</span>
+              <a href="#" class="portfolio-button"
+                ><i class="fas fa-eye"></i
+              ></a>
+            </div>
+          </div>
+          <!-- Portfolio Item 2 -->
+          <div
+            class="portfolio-content grid"
+            data-item="flyer"
+            data-download-url="assets/projects/GDI2.jpg"
+          >
+            <img
+              src="assets/projects/GDI2.jpg"
+              alt="GDI2 Flyer Design"
+              class="portfolio-img"
+            />
+            <div class="portfolio-data">
+              <h3 class="portfolio-title">Event Flyer</h3>
+              <span class="portfolio-subtitle">Social Media</span>
+              <a href="#" class="portfolio-button"
+                ><i class="fas fa-eye"></i
+              ></a>
+            </div>
+          </div>
+          <!-- Portfolio Item 3 -->
+          <div
+            class="portfolio-content grid"
+            data-item="business-card"
+            data-download-url="assets/projects/WTD.jpg"
+          >
+            <img
+              src="assets/projects/WTD.jpg"
+              alt="Business Card Design"
+              class="portfolio-img"
+            />
+            <div class="portfolio-data">
+              <h3 class="portfolio-title">Business Card</h3>
+              <span class="portfolio-subtitle">Branding</span>
+              <a href="#" class="portfolio-button"
+                ><i class="fas fa-eye"></i
+              ></a>
+            </div>
+          </div>
+          <!-- Portfolio Item 4 -->
+          <div
+            class="portfolio-content grid"
+            data-item="flyer"
+            data-download-url="assets/projects/GDI3.jpg"
+          >
+            <img
+              src="assets/projects/GDI3.jpg"
+              alt="GDI3 Flyer Design"
+              class="portfolio-img"
+            />
+            <div class="portfolio-data">
+              <h3 class="portfolio-title">GDI3 Flyer</h3>
+              <span class="portfolio-subtitle">Social Media</span>
+              <a href="#" class="portfolio-button"
+                ><i class="fas fa-eye"></i
+              ></a>
+            </div>
+          </div>
+          <!-- Portfolio Item 5 -->
+          <div
+            class="portfolio-content grid"
+            data-item="flyer"
+            data-download-url="assets/projects/GDI4.jpg"
+          >
+            <img
+              src="assets/projects/GDI4.jpg"
+              alt="GDI4 Flyer Design"
+              class="portfolio-img"
+            />
+            <div class="portfolio-data">
+              <h3 class="portfolio-title">GDI4 Flyer</h3>
+              <span class="portfolio-subtitle">Social Media</span>
+              <a href="#" class="portfolio-button"
+                ><i class="fas fa-eye"></i
+              ></a>
+            </div>
+          </div>
+          <!-- Portfolio Item 6 -->
+          <div
+            class="portfolio-content grid"
+            data-item="flyer"
+            data-download-url="assets/projects/CFD.jpg"
+          >
+            <img
+              src="assets/projects/CFD.jpg"
+              alt="CFD Flyer Design"
+              class="portfolio-img"
+            />
+            <div class="portfolio-data">
+              <h3 class="portfolio-title">CFD Flyer</h3>
+              <span class="portfolio-subtitle">Church Event</span>
+              <a href="#" class="portfolio-button"
+                ><i class="fas fa-eye"></i
+              ></a>
+            </div>
+          </div>
+          <!-- Portfolio Item 7 -->
+          <div
+            class="portfolio-content grid"
+            data-item="flyer"
+            data-download-url="assets/projects/CFD2.jpg"
+          >
+            <img
+              src="assets/projects/CFD2.jpg"
+              alt="CFD2 Flyer Design"
+              class="portfolio-img"
+            />
+            <div class="portfolio-data">
+              <h3 class="portfolio-title">CFD2 Flyer</h3>
+              <span class="portfolio-subtitle">Church Event</span>
+              <a href="#" class="portfolio-button"
+                ><i class="fas fa-eye"></i
+              ></a>
+            </div>
+          </div>
+          <!-- Portfolio Item 8 -->
+          <div
+            class="portfolio-content grid"
+            data-item="flyer"
+            data-download-url="assets/projects/CFD3.jpg"
+          >
+            <img
+              src="assets/projects/CFD3.jpg"
+              alt="CFD3 Flyer Design"
+              class="portfolio-img"
+            />
+            <div class="portfolio-data">
+              <h3 class="portfolio-title">CFD3 Flyer</h3>
+              <span class="portfolio-subtitle">Church Event</span>
+              <a href="#" class="portfolio-button"
+                ><i class="fas fa-eye"></i
+              ></a>
+            </div>
+          </div>
+          <!-- Portfolio Item 9 -->
+          <div
+            class="portfolio-content grid"
+            data-item="flyer"
+            data-download-url="assets/projects/CFD4.jpg"
+          >
+            <img
+              src="assets/projects/CFD4.jpg"
+              alt="CFD4 Flyer Design"
+              class="portfolio-img"
+            />
+            <div class="portfolio-data">
+              <h3 class="portfolio-title">CFD4 Flyer</h3>
+              <span class="portfolio-subtitle">Church Event</span>
+              <a href="#" class="portfolio-button"
+                ><i class="fas fa-eye"></i
+              ></a>
+            </div>
+          </div>
+          <!-- Portfolio Item 10 -->
+          <div
+            class="portfolio-content grid"
+            data-item="flyer"
+            data-download-url="assets/projects/TCW.jpg"
+          >
+            <img
+              src="assets/projects/TCW.jpg"
+              alt="TCW Flyer Design"
+              class="portfolio-img"
+            />
+            <div class="portfolio-data">
+              <h3 class="portfolio-title">TCW Flyer</h3>
+              <span class="portfolio-subtitle">Workshop</span>
+              <a href="#" class="portfolio-button"
+                ><i class="fas fa-eye"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- ==================== PORTFOLIO LIGHTBOX/POPUP ==================== -->
+    <div class="portfolio-popup">
+      <div class="portfolio-popup-inner">
+        <img src="" alt="" class="portfolio-popup-img" />
+        <div class="portfolio-popup-close"><i class="fas fa-times"></i></div>
+        <!-- New Download Button -->
+        <a href="#" class="lightbox-download-btn" download
+          ><i class="fas fa-download"></i> Download</a
+        >
+      </div>
+    </div>
+
+    <!-- ==================== FOOTER ==================== -->
+    <footer class="footer" id="contact">
+      <!-- Your existing footer code here -->
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -465,6 +465,107 @@ img {
     color: var(--primary-color);
     cursor: pointer;
 }
+/* NEW PORTFOLIO PAGE */
+.portfolio-controls {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: var(--mb-2);
+}
+
+.view-controls {
+    display: flex;
+    gap: .5rem;
+}
+
+.view-btn {
+    font-size: 1.25rem;
+    padding: .5rem;
+    cursor: pointer;
+    background: var(--container-color);
+    border: none;
+    color: var(--text-color-light);
+    border-radius: .25rem;
+}
+
+.view-btn.active-view {
+    background: var(--primary-color);
+    color: var(--dark-color);
+}
+
+/* LIST VIEW STYLES */
+.portfolio-container.list-view .portfolio-content {
+    grid-template-columns: 100px 1fr; /* Image on left, text on right */
+    gap: 1.5rem;
+    padding: 1rem;
+    background-color: var(--container-color);
+}
+
+.portfolio-container.list-view .portfolio-data {
+    position: static; /* Override the hover overlay */
+    background: transparent;
+    opacity: 1;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.portfolio-container.list-view .portfolio-title,
+.portfolio-container.list-view .portfolio-subtitle {
+    color: var(--title-color);
+    text-align: left;
+}
+
+.portfolio-container.list-view .portfolio-button {
+    display: none; /* Hide the eye icon in list view */
+}
+
+/* Lightbox Download Button */
+.lightbox-download-btn {
+    position: absolute;
+    bottom: 2rem;
+    left: 50%;
+    transform: translateX(-50%);
+    background: var(--primary-color);
+    color: var(--dark-color);
+    padding: .75rem 1.5rem;
+    border-radius: .5rem;
+    font-weight: var(--font-medium);
+    transition: .3s;
+}
+
+.lightbox-download-btn:hover {
+    background: var(--primary-color-alt);
+}
+
+/* View All Projects Button */
+.portfolio-view-all {
+    text-align: center;
+    margin-top: 2rem;
+}
+
+/*=============== RESPONSIVE PORTFOLIO GRID ===============*/
+/* Desktop View: 3 columns */
+.portfolio-container.grid-view {
+    grid-template-columns: repeat(3, 1fr);
+}
+
+/* Tablet View: 2 columns */
+@media screen and (max-width: 992px) {
+    .portfolio-container.grid-view {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Mobile View: 1 column */
+@media screen and (max-width: 576px) {
+    .portfolio-container.grid-view {
+        grid-template-columns: 1fr;
+    }
+    .portfolio-controls {
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+}
 /* FOOTER */
 .footer {
     padding-top: 2rem;
