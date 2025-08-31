@@ -546,7 +546,9 @@ img {
 /*=============== RESPONSIVE PORTFOLIO GRID ===============*/
 /* Desktop View: 3 columns */
 .portfolio-container.grid-view {
+    display: grid;
     grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
 }
 
 /* Tablet View: 2 columns */
@@ -560,10 +562,6 @@ img {
 @media screen and (max-width: 576px) {
     .portfolio-container.grid-view {
         grid-template-columns: 1fr;
-    }
-    .portfolio-controls {
-        flex-direction: column;
-        gap: 1.5rem;
     }
 }
 /* FOOTER */
