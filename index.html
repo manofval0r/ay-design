@@ -15,18 +15,29 @@
     <!-- HEADER & NAVIGATION -->
     <header class="header">
         <nav class="nav container">
-            <a href="#home" class="nav-logo">Solomon B.</a>
-
-            <div class="nav-menu">
-                <ul class="nav-list">
-                    <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
-                    <li class="nav-item"><a href="#portfolio" class="nav-link">Portfolio</a></li>
-                    <li class="nav-item"><a href="#experience" class="nav-link">Experience</a></li>
-                    <li class="nav-item"><a href="#certificates" class="nav-link">Certificates</a></li>
-                    <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
-                </ul>
-            </div>
-        </nav>
+        <a href="index.html" class="nav-logo">Solomon B.</a>
+        <div class="nav-menu">
+          <ul class="nav-list">
+            <li class="nav-item">
+              <a href="index.html#about" class="nav-link">About</a>
+            </li>
+            <li class="nav-item">
+              <a href="projects.html" class="nav-link">Portfolio</a>
+            </li>
+            <li class="nav-item">
+              <a href="index.html#experience" class="nav-link">Experience</a>
+            </li>
+            <li class="nav-item">
+              <a href="certificates.html" class="nav-link active-nav-link"
+                >Certificates</a
+              >
+            </li>
+            <li class="nav-item">
+              <a href="index.html#contact" class="nav-link">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
     </header>
 
     <main>
@@ -195,62 +206,41 @@
         <!-- EDUCATION - CERTIFICATIONS & AWARDS -->
 <section class="certificates section" id="certificates">
     <h2 class="section-title">Education - Certifications & Awards</h2>
-    <span class="section-subtitle">My Academic & Professional Qualifications</span>
+    <span class="section-subtitle">My Academic & Professional Qualifications (Sneak Peek)</span>
 
     <div class="education-container container">
-        <!-- University Degree -->
-        <div class="education-degree">
-            <h3 class="degree-university">Anchor University</h3>
-            <p class="degree-title">Bachelor of Science (BSc) in Computer Science</p>
-        </div>
-
-        <!-- Certificates Grid -->
+        <!-- Sneak peek: show only the top 3 certificates -->
         <div class="certificates-container grid">
             <div class="certificate-card">
+                <i class="fas fa-award certificate-icon"></i>
                 <h4 class="certificate-title">Jobberman Soft Skills Training</h4>
+                <img src="assets/certificates/jobberman-soft-skills.jpg" alt="Jobberman Soft Skills certificate" class="certificate-img">
                 <p class="certificate-issuer">MasterCard Foundation | 2024</p>
                 <p class="certificate-description">Training in communication, teamwork, and professional effectiveness.</p>
             </div>
+
             <div class="certificate-card">
+                <i class="fas fa-award certificate-icon"></i>
                 <h4 class="certificate-title">MikroTik Certified Network Associate (MTCNA)</h4>
+                <img src="assets/certificates/mtcna.jpg" alt="MikroTik MTCNA certificate" class="certificate-img">
                 <p class="certificate-issuer">MikroTik | 2025</p>
                 <p class="certificate-description">Certified knowledge in network administration and management.</p>
             </div>
+
             <div class="certificate-card">
+                <i class="fas fa-award certificate-icon"></i>
                 <h4 class="certificate-title">CyberSecurity & Data Science Workshop</h4>
+                <img src="assets/certificates/ucb-cs-ds.jpg" alt="CyberSecurity and Data Science certificate" class="certificate-img">
                 <p class="certificate-issuer">University Of Colorado Boulder, USA | 2024</p>
                 <p class="certificate-description">Continued studies in cybersecurity and data analysis.</p>
             </div>
-             <div class="certificate-card">
-                <h4 class="certificate-title">CyberSecurity & Data Science Workshop</h4>
-                <p class="certificate-issuer">University Of Colorado Boulder, USA | 2023</p>
-                <p class="certificate-description">Workshop on the fundamentals of cybersecurity and data analysis.</p>
-            </div>
-            <div class="certificate-card">
-                <h4 class="certificate-title">Introduction to Critical Infrastructure Protection</h4>
-                <p class="certificate-issuer">Certificate | 2024</p>
-                <p class="certificate-description">Training on protecting essential systems and infrastructure.</p>
-            </div>
-            <div class="certificate-card">
-                <h4 class="certificate-title">Network Mastery For Ethical Hackers</h4>
-                <p class="certificate-issuer">Certificate | 2024</p>
-                <p class="certificate-description">Advanced training in network security and ethical hacking protocols.</p>
-            </div>
-            <div class="certificate-card">
-                <h4 class="certificate-title">Web Design Course For Beginner To Advanced</h4>
-                <p class="certificate-issuer">Certificate | 2024</p>
-                <p class="certificate-description">Covered principles of responsive web design and development.</p>
-            </div>
-            <div class="certificate-card">
-                <h4 class="certificate-title">Nigeria Computer Society (NCS)</h4>
-                <p class="certificate-issuer">Certificate | 2025</p>
-                <p class="certificate-description">Official membership and certification from Nigeria's foremost IT body.</p>
-            </div>
-            <div class="certificate-card">
-                <h4 class="certificate-title">West African Senior School Certificate (WASSCE)</h4>
-                <p class="certificate-issuer">WAEC | 2021</p>
-                <p class="certificate-description">Secondary school qualification in Science subjects.</p>
-            </div>
+        </div>
+
+        <!-- See all button -->
+        <div class="certificates-view-all container" style="text-align:center; margin-top:1.5rem;">
+            <a href="certificates.html" class="button button--flex">
+                See All Certificates <i class="fas fa-arrow-right button-icon"></i>
+            </a>
         </div>
     </div>
 </section>
